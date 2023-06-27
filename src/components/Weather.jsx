@@ -28,7 +28,7 @@ const Weather = () => {
     //
     const [nextDays,setNextDays] = useState([]);
     useEffect(()=>{
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=eba0ed9a2c91486d909165655232306&&q=${country}&days=7&aqi=yes&alerts=no`)
+        fetch(`http://api.weatherapi.com/v1/forecast.json?key=eba0ed9a2c91486d909165655232306&&q=canada&days=7&aqi=yes&alerts=no`)
         .then(res => res.json())
         .then(data => {return(setValue(data.location),setCurrent(data.current),setIcons(data.current.condition),setForecast(data.forecast.forecastday[0].astro),setAir(data.current.air_quality),setHour(data.forecast.forecastday[0].hour),setNextDays(data.forecast.forecastday))})
         .catch(err => console.log(err))
