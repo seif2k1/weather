@@ -1,0 +1,72 @@
+.now{
+    background: #343434;
+    width: 100%;
+    display: flex;
+    text-indent: 5px;
+    padding:0 13px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 35px;
+}
+hr{
+    width: 80%;
+}
+.nowDetails h6{
+    text-align:center;
+    color:gray;
+    text-align:center;
+}
+.nowInfo h5{
+    text-align:center;
+}
+.nowInfoLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nowInfoLogo img{
+    width: 50px;
+    height: 50px;
+    scale: 1.5;
+    animation: animate 2s infinite ease-in-out;
+}
+@keyframes animate {
+    0%{
+        scale: 1.5;
+    }
+    50%{
+        scale: 1.7;
+    }
+    100%{
+        scale: 1.5;
+    }
+    
+}
+.nowDetails .day,.nowDetails .position{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (0px<=width<=765px){
+    .now{
+        padding:0 15px;
+        width:auto;
+    }
+    .nowInfoLogo img{
+        width: 50px;
+        height: 50px;
+        scale: 3;
+        animation: animate 2s infinite ease-in-out;
+    }
+    @keyframes animate {
+        0%{
+            scale: 3;
+        }
+        50%{
+            scale: 3.5;
+        }
+        100%{
+            scale: 3;
+        }
+        
+    }
+}

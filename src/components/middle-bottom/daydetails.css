@@ -1,0 +1,38 @@
+.hours-details{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.hours-details div {
+    border-radius: 12px;
+    width: 17%;
+    text-align: center;
+    background: #343434;
+}
+@media only screen and (766px<=width<= 800px){
+    .hours-title{
+        margin: 124px 0;
+        height: 265px;
+        overflow-y: scroll;
+    }
+}
+@media only screen and (0<=width<= 765px){
+    .hours-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .hours-details div {
+        width: 30%;
+    }
+    .hours-title {
+        margin: 15px 0;
+        height: 265px;
+        overflow-y: scroll;
+    }
+}

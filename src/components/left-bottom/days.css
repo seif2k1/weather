@@ -1,0 +1,24 @@
+.days{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:30px 0;
+    background: #343434;
+    border-radius: 35px;
+    text-indent: 5px;
+    padding:0 13px;
+    width: 100%;
+}
+.days div{
+    color: white;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+@media only screen and (0px<=width<=765px){
+    .days{
+        padding:0;
+    }
+}

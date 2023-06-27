@@ -1,0 +1,140 @@
+.DayInfo{
+    height: 55vh;
+    padding: 50px 17px;
+}
+.daysItems{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.daysItems .items-1{
+    width: 45%;
+    margin-bottom:15px;
+    background: #343434;
+    border-radius: 35px;
+}
+.daysItems .items-1:nth-child(1),
+.daysItems .items-1:nth-child(2){
+    padding: 0px 6px;
+    display: flex;
+    flex-direction: column;
+}
+.daysItems .items-1:nth-child(1) .air-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.daysItems .items-1:nth-child(1) .air-name h4,.daysItems .items-1:nth-child(1) .air-info svg,.daysItems .items-1:nth-child(2) h4{
+    fill: white;
+    color: gray;
+}
+.daysItems .items-1:nth-child(1) .air-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.daysItems .items-1:nth-child(1) .air-info div h6{
+    text-align:center;
+    color: gray;
+}
+.daysItems .items-1:nth-child(1) .air-info div h3{
+    width:10mm;
+    overflow: hidden;
+}
+.daysItems .items-1:nth-child(2) .riseSet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.daysItems .items-1:nth-child(2) .riseSet .sunrise,.daysItems .items-1:nth-child(2) .riseSet .sunset{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.daysItems .items-1:nth-child(2) .riseSet .sunrise h3,.daysItems .items-1:nth-child(2) .riseSet .sunset h3{
+    color: white;
+}
+.daysItems .items-2{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #343434;
+    border-radius: 35px;
+    text-indent: 15px;
+}
+.daysItems .items-2 h3{
+    color: gray;
+}
+.daysItems .items-2 h4{
+    color: white;
+}
+.daysItems .items-2 div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media only screen and (766px<=width<= 800px){
+    .daysItems .items-1:nth-child(2) .riseSet .sunrise svg,.daysItems .items-1:nth-child(2) .riseSet .sunset svg{
+        height: 30px;
+        width: 30px;
+    }
+    .daysItems .items-1:nth-child(2) .riseSet .sunrise .sunrise-info h4,.daysItems .items-1:nth-child(2) .riseSet .sunset .sunset-info h4{
+        font-size:15px;
+        margin-right: 10px;
+    }
+    .daysItems .items-1{
+        text-indent: 15px;
+    }
+    .daysItems .items-2{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .daysItems .items-1:nth-child(2) .riseSet .sunrise h3,.daysItems .items-1:nth-child(2) .riseSet .sunset h3{
+        font-size:12px;
+    }
+}
+@media only screen and (0<=width<= 765px){
+
+    .daysItems .items-1{
+        text-indent: 15px;
+    }
+    .daysItems .items-2 {
+        width: 45%;
+        margin: 10px 0;
+    }
+    .DayInfo{
+        height: 100%;
+    }
+    .daysItems .items-1:nth-child(2) .riseSet .sunrise svg,.daysItems .items-1:nth-child(2) .riseSet .sunset svg{
+        height: 30px;
+        width: 30px;
+    }
+    .daysItems .items-1:nth-child(2) .riseSet .sunrise .sunrise-info h4,.daysItems .items-1:nth-child(2) .riseSet .sunset .sunset-info h4{
+        font-size:17px;
+        margin-right: 10px;
+    }
+    .daysItems .items-1:nth-child(2) .riseSet .sunrise h3, .daysItems .items-1:nth-child(2) .riseSet .sunset h3 {
+        color: white;
+        font-size: 14px;
+    }
+}
+@media only screen and (0px<=width<=533px){
+    .daysItems .items-1{
+        width:100%
+    }.daysItems .items-2{
+        width:48%;
+    }
+    .daysItems .items-1:nth-child(2) .riseSet .sunrise svg,.daysItems .items-1:nth-child(2) .riseSet .sunset svg{
+        height: 45px;
+        width: 45px;
+    }
+    .daysItems .items-1:nth-child(2) .riseSet .sunrise .sunrise-info h4,.daysItems .items-1:nth-child(2) .riseSet .sunset .sunset-info h4{
+        font-size:17px;
+        margin-right: 16px;
+    }
+}
+@media only screen and (321px<=width<=764px){}

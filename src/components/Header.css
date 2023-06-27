@@ -1,0 +1,143 @@
+.content{
+    width: 100vw;
+    background: black;
+    overflow-x: hidden;
+}
+.items{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.items .left{   
+    padding: 17px;
+    width: 20%;
+}
+.items .right{
+    width: 80%;
+    padding: 0 20px;
+}
+.items .left,.items .right{
+    display: flex;
+    flex-direction: column;
+}
+.contentStyle{
+    width: 350px;
+    border-radius: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:0 0 35px #570cbe;
+    background: linear-gradient(to left,#60c684,#570cbe);
+}
+h1,p,h3,h5,span{
+    color: white;
+}
+.contentStyle>h1{
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+.content-items,.content-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-items img{
+    width: 150px;
+    height: 150px;
+    animation: animate 2s infinite ease-in-out;
+}
+@keyframes animate {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+.humidity,.wind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.humidity .humidity-info svg,.wind .wind-info svg{
+    color:white;
+}
+.humidity .humidity-info,.wind .wind-info{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-weather-info{
+    width: 250px;
+}
+.country{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+.contentStyle form{
+    width:70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contentStyle form svg{
+    cursor:pointer;
+    color:darkgray;
+    width:25px;
+    height:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:lightgreen;
+    border-radius: 50%;
+    padding:8px;
+}
+@media only screen and (766px<=width<= 800px) {
+    .content{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .items .left{   
+        width: 30%;
+    }
+    .items .right{
+        width: 70%;
+    }
+    .DayInfo{
+        height: 100%;
+        padding:0;
+    }
+}
+@media only screen and (766px<=width<= 800px){
+    .items{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (0<=width<= 765px){
+    .items{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .items .left{   
+        padding: 17px;
+        width: 80%;
+    }
+    .items .right{
+        width: 100%;
+        padding: 0;
+    }
+}
